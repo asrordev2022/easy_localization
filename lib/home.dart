@@ -49,10 +49,10 @@ class _HomeState extends State<Home> {
                   ),
                   ElevatedButton(
                       onPressed: () {
-                        setState(() {
-                          
-                        });
-                        context.setLocale(localesList[getIt<Random>().nextInt(localesList.length)]); // til o'zgartirish uchun
+                        setState(() {});
+                        context.setLocale(localesList[getIt<Random>().nextInt(
+                            localesList
+                                .length)]); // til o'zgartirish uchun context.setLocale(ichiga Locale() ya'ni o'zgartirmoqchi bo'lgan tilimni yozaman)
                       },
                       child: Container(
                         height: 50,
